@@ -23,7 +23,7 @@ header .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid #16a34a;
     width: 400px;
     margin: auto;
 }
@@ -40,7 +40,7 @@ header h1 {
     color: rgb(255, 255, 255);
 }
 
-/* Estilização do conteúdo */
+/* Estilização do main */
 
 main {
     display: flex;
@@ -48,6 +48,7 @@ main {
     align-items: center;
     width: 800px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 main form {
@@ -56,26 +57,7 @@ main form {
 
 }
 
-/* .input-contato {
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 8px;
-    background-color: #3f3f46;
-    padding: 0.3rem;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.input-contato input {
-    background-color: transparent;
-    border: none;
-    color: #f8fafc;
-    font-size: 1.3rem;
-    padding: 0 0.5rem;
-    width: 100%;
-} */
+/* Estilização dos input's e button */
 
 .input-contato {
     padding: 0.2rem;
@@ -90,13 +72,64 @@ main form {
 }
 
 .input-contato #num-contato {
-    width: 100%;
+    width: 93%;
     grid-area: num;
 }
 
 .input-contato #nome-contato {
-    width: 100%;
+    width: 97%;
     grid-area: cont;
 }
 
+.input-contato  #nome-contato,
+#num-contato {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
+    outline: none;
+    margin: 8px;
+}
 
+.input-contato #num-contato::-webkit-outer-spin-button,
+.input-contato #num-contato::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-contat #num-contato:focus {
+    
+}
+
+.input-contato button {
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #16a34a;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Estilização da tabela */
+
+table {
+    width: 100%;
+    color: #f8fafc;
+}
+
+table th {
+    border-bottom: 2px solid #16a34a;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+table td {
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid #16a34a36;
+}

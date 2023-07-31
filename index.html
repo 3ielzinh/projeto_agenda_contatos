@@ -10,18 +10,32 @@
 <body>
     <header>
         <div class="container">
-            <img src="./assets/img/anuario.png" alt="Agenda de Contatos">
             <h1>Agenda de Contatos</h1>
         </div>
     </header>
     <main>
-        <form>
+        <form id="form-atividade">
             <div class="input-contato">
                 <input type="text" name="nomeContato" id="nome-contato" required placeholder="Nome do Contato">
-                <input type="number" name="numeroContato" id="num-contato" required placeholder="Número do Contato">
-                <button type="submit">Adicionar</button>
+                <input pattern="[0-9]{2} [0-9]{5}[0-9]{4}" type="tel" name="numeroContato" id="num-contato" required placeholder="Número do Contato">
+                <button type="submit">Cadastrar</button>
             </div>    
         </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Número do Contato</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td id="name-contato">---</td>
+                    <td id="numb-contato">---</td>
+                </tr>
+            </tfoot>
+        </table>
     </main>
     <script src="./assets/js/main.js"></script>
 </body>
